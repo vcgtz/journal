@@ -34,6 +34,7 @@
 
                 <div class="gh-head-actions">
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
+                    {{!--
                     {{#unless @member}}
                         <a class="gh-head-btn" href="#/portal/signup" data-portal="signup">
                             {{> icons/email}}
@@ -42,12 +43,16 @@
                     {{else}}
                         <a class="gh-head-btn" href="#/portal/account" data-portal="account">Account</a>
                     {{/unless}}
+                    --}}
                 </div>
             </div>
         </header>
 
         {{{body}}}
 
+        <hr>
+
+        {{!--
         {{^if @member.paid}}
             <div class="gh-subscribe">
                 <div class="gh-outer">
@@ -75,6 +80,7 @@
                 </div>
             </div>
         {{/if}}
+        --}}
 
         <footer class="gh-foot gh-outer">
             <div class="gh-foot-inner gh-inner">
@@ -87,7 +93,7 @@
                 </nav>
 
                 <div class="gh-powered-by">
-                    <a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a>
+                    <a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost - Updated by Vicente Gutiérrez</a>
                 </div>
             </div>
         </footer>
